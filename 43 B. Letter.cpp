@@ -2,21 +2,6 @@
 using namespace std;
 #define MP ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
 
-map<char,int> m1,m2;
-
-void inp(string s , bool f)
-{
-    int len= s.length();
-    for(int i=0;i<len;i++)
-    {
-        if(s[i]!=' ')
-        {
-            if(f) m1[s[i]]++;
-            else m2[s[i]]++;
-        }
-    }
-}
-
 int main()
 {
     MP;
