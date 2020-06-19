@@ -11,14 +11,11 @@ func main() {
 	for t > 0 {
 		n := 0
 		fmt.Scanf("%d\n", &n)
-		if n < 60 {
+
+		if status(n) == false {
 			fmt.Printf("NO\n")
 		} else {
-			if status(n) == false {
-				fmt.Printf("NO\n")
-			} else {
-				fmt.Printf("YES\n")
-			}
+			fmt.Printf("YES\n")
 		}
 		t = t - 1
 	}
